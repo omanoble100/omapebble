@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Rubik&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+section{
+    margin: 1rem 4rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    align-items: center;
+    width: 80%;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+.bar {
+    display: none;
+}
+
+.main-links ul, .login-section ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  
+    
+}
+
+.main-links ul li {
+    margin-right: 3rem;
+}
+
+li {
+    list-style: none;
+    font-size: 16px;
+    margin: 0px 40px;
+ 
+}
+
+.login-section ul li {
+    padding: 15px 20px;
+    margin: 0px 10px ;
+    
+}
+.signout {
+    border: 2px solid #c90fc9;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.signout:hover, .signin:hover {
+    color: #c90fc9;
+    border: 2px solid #c90fc9;
+    border-radius: 3px;
+}
+
+
+.main-section{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.text-section {
+    line-height: 30px;
+    width: 50%;
+    text-align: justify;
+    font-stretch: expanded;
+    
+}
+
+h1 {
+    color: #570957;
+    text-shadow: 1px 3px 5px  #881e8a;
+    font-size: 50px;
+    line-height: 70px;
+    font-family: 'Roboto', Helvetica, Arial,  sans-serif ;
+    font-weight: 500;
+    
+    font-stretch: ultra-expanded;
+}
+
+p {
+    padding-right: 170px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.img-section {
+    width: 50%;
+    height: 100%;
+}
+
+.img-section img {
+    object-fit: cover;
+    width: 100%;
+}
+
+button {
+    background-color: #c90fc9;
+    color: white;
+    border: none;
+    padding: 15px 45px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+button:hover {
+    color: #c90fc9;
+    border: 2px solid #651868;
+    background-color: white;
+    transition: all ease-out 0.3s;
+    margin: 40px 0;
+    transition: all ease-out 1s;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 70px auto;
+    box-shadow: 1px 14px 15px 0px #888888;
+    border-radius: 5px;
+    padding: 30px;
+    height: 200px;
+    align-items: center;
+    
+}
+
+.user {
+    display: flex;
+    line-height: 10px;
+    align-items: center;
+    margin: 40px auto;
+    padding-left: 10px;
+    width: 100%;
+    
+}
+
+.info-img {
+    background-color: #ecb8ec;
+    border-radius: 50%;
+    padding: 2rem auto;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.info-img img {
+    width: 40%;
+    color: #570957;
+
+}
+
+.info-text {
+    margin-left: 30px;
+    width: 50%;
+}
+
+.info-text p {
+    font-size: 25px;
+    font-weight: 600;
+    color: #888888;
+}
+
+
+@media screen and (max-width:700px) {
+   
+     section {
+        
+        margin: 1rem 0; 
+    }
+
+    .navbar {
+        margin-bottom: 1rem; 
+        padding: 2rem ;
+        width: 100%;
+        align-items: center;
+    }
+
+
+
+    h1{
+         margin-top: 10px;
+         text-align: center;
+    }
+    .text-section p { 
+        padding-right: 0;
+        margin: 1rem 2rem; 
+    }
+    .main-links, .login-section {
+        display: none;
+    }
+
+    .bar {
+        display: inline-block;
+        width: 20%;
+    }
+
+    .bar img {
+        width: 20%;
+        object-fit: contain;
+    }
+
+    .main-section {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .text-section{
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-section {
+        margin-top: 2rem;
+        width: 90%;
+    }
+
+    .info {
+        
+        width: 50%;
+        margin: 20px auto;
+        box-shadow:none;
+        border-radius: 0;
+        padding: 0px;
+        flex-direction: column;
+        
+    } 
+
+    .info-text {
+        margin-left: 15px;
+
+    }
+
+    
+}
